@@ -9,7 +9,7 @@ public class HelloWorldController {
 
 	@RequestMapping("/helloWorld")
 	public String helloWorld(Model model) {
-		model.addAttribute("message", "StringMvc Hello!!!");
+		model.addAttribute("message", "StringMvc hello hello");
 		return "helloWorld";
 	}
 }

@@ -7,7 +7,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<a href="user/ajax.do">Test ajax</a>
+<a href="user/ajax.do">Test Ajax </a>
 <form action="user/login.do" method="post">
 	<table>
 		<tr>

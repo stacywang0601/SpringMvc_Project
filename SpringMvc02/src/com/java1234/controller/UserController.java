@@ -39,6 +39,7 @@ public class UserController {
 		return "redirect:/main.jsp";
 	}
 
+	// support jason object
 	@RequestMapping("/ajax")
 	public @ResponseBody User ajax() {
 		User user = new User("zhangsan", "123");

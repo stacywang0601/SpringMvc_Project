@@ -7,7 +7,9 @@
 <title>Insert title here</title>
 </head>
 <body>
-	<form action="student/save.do" method="post">
+	<%-- change this path --%>
+	<form action="${pageContext.request.contextPath}/student/save.do"
+		method="post">
 		<table>
 			<tr>
 				<th colspan="2">Modify students</th>

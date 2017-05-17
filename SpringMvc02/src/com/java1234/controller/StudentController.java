@@ -43,4 +43,23 @@ public class StudentController {
 		}
 		return mav;
 	}
+
+	@RequestMapping("/save")
+	public String save(Student student) {
+		if (student.getId() != 0) {
+			Student s = studentList.get(student.getId() - 1);
+			s.setName(student.getName());
+			s.setAge(student.getAge());
+		} else {
+			studentList.add(student);
+		}
+		// return "redirect:/student/list.do";
+		return "forward:/student/list.do";
+	}
+
+	@RequestMapping("/delete")
+	public String delete(@RequestParam("id") int id) {
+		studentList.remove(id - 1);
+		return "redirect:/student/list.do";
+	}
 }
